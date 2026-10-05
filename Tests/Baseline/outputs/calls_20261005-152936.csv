@@ -1,0 +1,61 @@
+case,model,repeat,status,attempts,seconds,broad_type,cell_type,p_cell_type,coherence,model_returned,stop_reason
+base,Jev,1,ok,1,0.249,Immune cell,T cell,1.0,3.65,jev-1.13.0,
+base,Claude Opus 5.5,1,ok,1,1.494,Immune cell,T cell,,4.0,claude-opus-5-5,end_turn
+base,Claude Sonnet 5.5,1,ok,1,1.677,Immune cell,T cell,,4.0,claude-sonnet-5-5,end_turn
+base + LST1,Jev,1,ok,1,0.168,Immune cell,T cell,1.0,3.26,jev-1.13.0,
+base + LST1,Claude Opus 5.5,1,ok,1,1.884,Immune cell,T cell,,3.0,claude-opus-5-5,end_turn
+base + LST1,Claude Sonnet 5.5,1,ok,1,1.774,Immune cell,T cell,,3.0,claude-sonnet-5-5,end_turn
+base,Jev,2,ok,1,0.134,Immune cell,T cell,1.0,3.69,jev-1.13.0,
+base,Claude Opus 5.5,2,ok,1,1.281,Immune cell,T cell,,4.0,claude-opus-5-5,end_turn
+base,Claude Sonnet 5.5,2,ok,1,1.366,Immune cell,T cell,,4.0,claude-sonnet-5-5,end_turn
+base + LST1,Jev,2,ok,1,0.153,Immune cell,T cell,1.0,3.27,jev-1.13.0,
+base + LST1,Claude Opus 5.5,2,ok,1,1.315,Immune cell,T cell,,3.0,claude-opus-5-5,end_turn
+base + LST1,Claude Sonnet 5.5,2,ok,1,1.569,Immune cell,T cell,,3.0,claude-sonnet-5-5,end_turn
+base,Jev,3,ok,1,0.138,Immune cell,T cell,1.0,3.63,jev-1.13.0,
+base,Claude Opus 5.5,3,ok,1,1.209,Immune cell,T cell,,4.0,claude-opus-5-5,end_turn
+base,Claude Sonnet 5.5,3,ok,1,1.415,Immune cell,T cell,,4.0,claude-sonnet-5-5,end_turn
+base + LST1,Jev,3,ok,1,0.129,Immune cell,T cell,1.0,3.22,jev-1.13.0,
+base + LST1,Claude Opus 5.5,3,ok,1,1.447,Immune cell,T cell,,3.0,claude-opus-5-5,end_turn
+base + LST1,Claude Sonnet 5.5,3,ok,1,1.638,Immune cell,T cell,,3.0,claude-sonnet-5-5,end_turn
+base,Jev,4,ok,1,0.121,Immune cell,T cell,1.0,3.68,jev-1.13.0,
+base,Claude Opus 5.5,4,ok,1,1.109,Immune cell,T cell,,4.0,claude-opus-5-5,end_turn
+base,Claude Sonnet 5.5,4,ok,1,1.406,Immune cell,T cell,,4.0,claude-sonnet-5-5,end_turn
+base + LST1,Jev,4,ok,1,0.18,Immune cell,T cell,1.0,3.23,jev-1.13.0,
+base + LST1,Claude Opus 5.5,4,ok,1,1.275,Immune cell,T cell,,3.0,claude-opus-5-5,end_turn
+base + LST1,Claude Sonnet 5.5,4,ok,1,1.819,Immune cell,T cell,,3.0,claude-sonnet-5-5,end_turn
+base,Jev,5,ok,1,0.158,Immune cell,T cell,1.0,3.66,jev-1.13.0,
+base,Claude Opus 5.5,5,ok,1,1.586,Immune cell,T cell,,4.0,claude-opus-5-5,end_turn
+base,Claude Sonnet 5.5,5,ok,1,1.429,Immune cell,T cell,,4.0,claude-sonnet-5-5,end_turn
+base + LST1,Jev,5,ok,1,0.165,Immune cell,T cell,1.0,3.29,jev-1.13.0,
+base + LST1,Claude Opus 5.5,5,ok,1,1.371,Immune cell,T cell,,3.0,claude-opus-5-5,end_turn
+base + LST1,Claude Sonnet 5.5,5,ok,1,1.614,Immune cell,T cell,,3.0,claude-sonnet-5-5,end_turn
+base,Jev,6,ok,1,0.138,Immune cell,T cell,1.0,3.65,jev-1.13.0,
+base,Claude Opus 5.5,6,ok,1,2.226,Immune cell,T cell,,4.0,claude-opus-5-5,end_turn
+base,Claude Sonnet 5.5,6,ok,1,1.447,Immune cell,T cell,,4.0,claude-sonnet-5-5,end_turn
+base + LST1,Jev,6,ok,1,0.15,Immune cell,T cell,1.0,3.27,jev-1.13.0,
+base + LST1,Claude Opus 5.5,6,ok,1,1.486,Immune cell,T cell,,3.0,claude-opus-5-5,end_turn
+base + LST1,Claude Sonnet 5.5,6,ok,1,1.656,Immune cell,T cell,,3.0,claude-sonnet-5-5,end_turn
+base,Jev,7,ok,1,0.124,Immune cell,T cell,1.0,3.63,jev-1.13.0,
+base,Claude Opus 5.5,7,ok,1,1.78,Immune cell,T cell,,4.0,claude-opus-5-5,end_turn
+base,Claude Sonnet 5.5,7,ok,1,1.369,Immune cell,T cell,,4.0,claude-sonnet-5-5,end_turn
+base + LST1,Jev,7,ok,1,0.157,Immune cell,T cell,1.0,3.21,jev-1.13.0,
+base + LST1,Claude Opus 5.5,7,ok,1,1.402,Immune cell,T cell,,3.0,claude-opus-5-5,end_turn
+base + LST1,Claude Sonnet 5.5,7,ok,1,2.627,Immune cell,T cell,,3.0,claude-sonnet-5-5,end_turn
+base,Jev,8,ok,1,0.141,Immune cell,T cell,1.0,3.67,jev-1.13.0,
+base,Claude Opus 5.5,8,ok,1,9.285,Immune cell,T cell,,4.0,claude-opus-5-5,end_turn
+base,Claude Sonnet 5.5,8,ok,1,1.527,Immune cell,T cell,,4.0,claude-sonnet-5-5,end_turn
+base + LST1,Jev,8,ok,1,0.132,Immune cell,T cell,1.0,3.2,jev-1.13.0,
+base + LST1,Claude Opus 5.5,8,ok,1,1.409,Immune cell,T cell,,3.0,claude-opus-5-5,end_turn
+base + LST1,Claude Sonnet 5.5,8,ok,1,1.677,Immune cell,T cell,,3.0,claude-sonnet-5-5,end_turn
+base,Jev,9,ok,1,0.142,Immune cell,T cell,1.0,3.66,jev-1.13.0,
+base,Claude Opus 5.5,9,ok,1,1.246,Immune cell,T cell,,4.0,claude-opus-5-5,end_turn
+base,Claude Sonnet 5.5,9,ok,1,1.413,Immune cell,T cell,,4.0,claude-sonnet-5-5,end_turn
+base + LST1,Jev,9,ok,1,0.153,Immune cell,T cell,1.0,3.29,jev-1.13.0,
+base + LST1,Claude Opus 5.5,9,ok,1,1.535,Immune cell,T cell,,3.0,claude-opus-5-5,end_turn
+base + LST1,Claude Sonnet 5.5,9,ok,1,1.772,Immune cell,T cell,,3.0,claude-sonnet-5-5,end_turn
+base,Jev,10,ok,1,0.127,Immune cell,T cell,1.0,3.64,jev-1.13.0,
+base,Claude Opus 5.5,10,ok,1,1.923,Immune cell,T cell,,4.0,claude-opus-5-5,end_turn
+base,Claude Sonnet 5.5,10,ok,1,1.389,Immune cell,T cell,,4.0,claude-sonnet-5-5,end_turn
+base + LST1,Jev,10,ok,1,0.132,Immune cell,T cell,1.0,3.27,jev-1.13.0,
+base + LST1,Claude Opus 5.5,10,ok,1,1.484,Immune cell,T cell,,3.0,claude-opus-5-5,end_turn
+base + LST1,Claude Sonnet 5.5,10,ok,1,1.612,Immune cell,T cell,,3.0,claude-sonnet-5-5,end_turn

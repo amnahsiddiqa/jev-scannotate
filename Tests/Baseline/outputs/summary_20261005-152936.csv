@@ -1,0 +1,7 @@
+case,model,n,median_s,median_s_lo,median_s_hi,cell_type,broad_type,coherence,coherence_lo,coherence_hi,x_vs_jev
+base,Jev,10,0.138,0.127,0.1495,T cell (10/10),Immune cell (10/10),3.656,3.6440000000000006,3.668,1.0
+base,Claude Opus 5.5,10,1.54,1.245,2.003,T cell (10/10),Immune cell (10/10),4.0,4.0,4.0,11.2
+base,Claude Sonnet 5.5,10,1.4140000000000001,1.3875,1.478,T cell (10/10),Immune cell (10/10),4.0,4.0,4.0,10.2
+base + LST1,Jev,10,0.153,0.132,0.165,T cell (10/10),Immune cell (10/10),3.2510000000000003,3.2310000000000003,3.2700000000000005,1.0
+base + LST1,Claude Opus 5.5,10,1.428,1.3584999999999998,1.5095,T cell (10/10),Immune cell (10/10),3.0,3.0,3.0,9.3
+base + LST1,Claude Sonnet 5.5,10,1.6665,1.614,1.7955,T cell (10/10),Immune cell (10/10),3.0,3.0,3.0,10.9

@@ -39,4 +39,4 @@ pip install -r requirements.txt
 | Jev | `TYPESAFE_API_KEY` (TypeSafe API) or `OPENROUTER_API_KEY` (OpenRouter Decisions endpoint) |
 | Claude | `ANTHROPIC_API_KEY`, or a profile from `ant auth login` |
 
-Open `Tests/Baseline/jev_vs_claude_baseline.ipynb` with `Tests/Baseline/` as the working directory and run all cells. The run makes 18 calls (3 models × 2 cases × 3 repeats), all real and billed. Results are written to `Tests/Baseline/outputs/`.
+Open `Tests/Baseline/jev_vs_claude_baseline.ipynb` with `Tests/Baseline/` as the working directory and run all cells. The run makes 60 calls (3 models × 2 cases × 10 repeats), all real and billed. Results are written to `Tests/Baseline/outputs/`.

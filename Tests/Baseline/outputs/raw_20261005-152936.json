@@ -1,0 +1,3102 @@
+[
+  {
+    "case": "base",
+    "model": "Jev",
+    "repeat": 1,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Erythroid lineage cell": 0.0,
+            "Muscle cell": 0.0,
+            "Immune cell": 1.0,
+            "Stromal cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Epithelial cell": 0.0,
+            "Neural cell": 0.0,
+            "Endothelial cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Goblet cell": 0.0,
+            "T cell": 1.0,
+            "Ciliated epithelial cell": 0.0,
+            "Mast cell": 0.0,
+            "Hepatocyte": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Neuron": 0.0,
+            "Fibroblast": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Natural killer cell": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Monocyte": 0.0,
+            "Astrocyte": 0.0,
+            "Dendritic cell": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Neutrophil": 0.0,
+            "Pericyte": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Macrophage": 0.0,
+            "B cell": 0.0,
+            "Erythrocyte": 0.0,
+            "Plasma cell": 0.0,
+            "Smooth muscle cell": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.65,
+          "confidence": 0.71,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.01,
+            "2": 0.06,
+            "3": 0.17,
+            "4": 0.76
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Opus 5.5",
+    "repeat": 1,
+    "response": {
+      "id": "msg_011CfjeDS3ZStxc4R8rMjX2X",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 1,
+    "response": {
+      "id": "msg_011CfjeDXTkBeCJoCvjpB4wL",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Jev",
+    "repeat": 1,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Immune cell": 1.0,
+            "Endothelial cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Stromal cell": 0.0,
+            "Muscle cell": 0.0,
+            "Neural cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Unknown / other broad type": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "T cell": 1.0,
+            "B cell": 0.0,
+            "Natural killer cell": 0.0,
+            "Plasma cell": 0.0,
+            "Monocyte": 0.0,
+            "Macrophage": 0.0,
+            "Dendritic cell": 0.0,
+            "Mast cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Fibroblast": 0.0,
+            "Pericyte": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Epithelial cell": 0.0,
+            "Hepatocyte": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Goblet cell": 0.0,
+            "Neuron": 0.0,
+            "Astrocyte": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Neutrophil": 0.0,
+            "Erythrocyte": 0.0,
+            "Unknown / other cell type": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.26,
+          "confidence": 0.38,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.05,
+            "2": 0.11,
+            "3": 0.32,
+            "4": 0.51
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1360,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Opus 5.5",
+    "repeat": 1,
+    "response": {
+      "id": "msg_011CfjeDfSULtVPSY34CArVh",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 1,
+    "response": {
+      "id": "msg_011CfjeDohp2885wWpgii5kU",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Jev",
+    "repeat": 2,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Unknown / other broad type": 0.0,
+            "Immune cell": 1.0,
+            "Erythroid lineage cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Stromal cell": 0.0,
+            "Muscle cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Neural cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Skeletal muscle cell": 0.0,
+            "Pericyte": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Hepatocyte": 0.0,
+            "Goblet cell": 0.0,
+            "Mast cell": 0.0,
+            "B cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Neutrophil": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Macrophage": 0.0,
+            "Erythrocyte": 0.0,
+            "Fibroblast": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Neuron": 0.0,
+            "Plasma cell": 0.0,
+            "T cell": 1.0,
+            "Epithelial cell": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Natural killer cell": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Dendritic cell": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Astrocyte": 0.0,
+            "Monocyte": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.69,
+          "confidence": 0.74,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.01,
+            "2": 0.05,
+            "3": 0.16,
+            "4": 0.78
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Opus 5.5",
+    "repeat": 2,
+    "response": {
+      "id": "msg_011CfjeDwcobegEpMsuaUsMq",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 2,
+    "response": {
+      "id": "msg_011CfjeE33Enr77dU1jzutms",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Jev",
+    "repeat": 2,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Neural cell": 0.0,
+            "Stromal cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Muscle cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Immune cell": 1.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Natural killer cell": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Hepatocyte": 0.0,
+            "Goblet cell": 0.0,
+            "Erythrocyte": 0.0,
+            "Monocyte": 0.0,
+            "Neutrophil": 0.0,
+            "Neuron": 0.0,
+            "Mast cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Fibroblast": 0.0,
+            "Astrocyte": 0.0,
+            "Dendritic cell": 0.0,
+            "B cell": 0.0,
+            "Pericyte": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Macrophage": 0.0,
+            "Plasma cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "T cell": 1.0,
+            "Epithelial cell": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.27,
+          "confidence": 0.4,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.04,
+            "2": 0.11,
+            "3": 0.32,
+            "4": 0.52
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1360,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Opus 5.5",
+    "repeat": 2,
+    "response": {
+      "id": "msg_011CfjeE9Xfm73ZgA8DHTKUT",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 2,
+    "response": {
+      "id": "msg_011CfjeEFCEGuGv8wnPYx5co",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Jev",
+    "repeat": 3,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Endothelial cell": 0.0,
+            "Muscle cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Immune cell": 1.0,
+            "Neural cell": 0.0,
+            "Stromal cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Epithelial cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Plasma cell": 0.0,
+            "Goblet cell": 0.0,
+            "Erythrocyte": 0.0,
+            "Dendritic cell": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Mast cell": 0.0,
+            "Astrocyte": 0.0,
+            "Pericyte": 0.0,
+            "T cell": 1.0,
+            "Epithelial cell": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Monocyte": 0.0,
+            "Neuron": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Neutrophil": 0.0,
+            "Fibroblast": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "B cell": 0.0,
+            "Natural killer cell": 0.0,
+            "Macrophage": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Hepatocyte": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.63,
+          "confidence": 0.7,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.01,
+            "2": 0.06,
+            "3": 0.18,
+            "4": 0.74
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Opus 5.5",
+    "repeat": 3,
+    "response": {
+      "id": "msg_011CfjeENVWySiYMfrTjGnG2",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 3,
+    "response": {
+      "id": "msg_011CfjeETf5mZbUSkarEhR2D",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Jev",
+    "repeat": 3,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Immune cell": 1.0,
+            "Epithelial cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Stromal cell": 0.0,
+            "Neural cell": 0.0,
+            "Muscle cell": 0.0,
+            "Erythroid lineage cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "T cell": 1.0,
+            "Erythrocyte": 0.0,
+            "Neutrophil": 0.0,
+            "Endothelial cell": 0.0,
+            "Cardiomyocyte": 0.0,
+            "B cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Dendritic cell": 0.0,
+            "Astrocyte": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Monocyte": 0.0,
+            "Plasma cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Macrophage": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Fibroblast": 0.0,
+            "Mast cell": 0.0,
+            "Neuron": 0.0,
+            "Hepatocyte": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Pericyte": 0.0,
+            "Natural killer cell": 0.0,
+            "Goblet cell": 0.0,
+            "Alveolar type 2 cell": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.22,
+          "confidence": 0.35,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.05,
+            "2": 0.12,
+            "3": 0.35,
+            "4": 0.47
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1360,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Opus 5.5",
+    "repeat": 3,
+    "response": {
+      "id": "msg_011CfjeEaMQg9vU8MojkbSGP",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 3,
+    "response": {
+      "id": "msg_011CfjeEgU1KFFsHePjgeYdH",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Jev",
+    "repeat": 4,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Endothelial cell": 0.0,
+            "Muscle cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Immune cell": 1.0,
+            "Neural cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Stromal cell": 0.0,
+            "Epithelial cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Plasma cell": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Dendritic cell": 0.0,
+            "Goblet cell": 0.0,
+            "Mast cell": 0.0,
+            "Erythrocyte": 0.0,
+            "Astrocyte": 0.0,
+            "Epithelial cell": 0.0,
+            "T cell": 1.0,
+            "Pericyte": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Monocyte": 0.0,
+            "Neuron": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Neutrophil": 0.0,
+            "Fibroblast": 0.0,
+            "Natural killer cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "B cell": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Macrophage": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Hepatocyte": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.68,
+          "confidence": 0.73,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.01,
+            "2": 0.05,
+            "3": 0.17,
+            "4": 0.77
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Opus 5.5",
+    "repeat": 4,
+    "response": {
+      "id": "msg_011CfjeEovEoaN5rqFhdipP1",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 4,
+    "response": {
+      "id": "msg_011CfjeEtmSARgMtaXQisisJ",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Jev",
+    "repeat": 4,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Epithelial cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Neural cell": 0.0,
+            "Immune cell": 1.0,
+            "Stromal cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Muscle cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Dendritic cell": 0.0,
+            "Neutrophil": 0.0,
+            "Monocyte": 0.0,
+            "Epithelial cell": 0.0,
+            "Macrophage": 0.0,
+            "Erythrocyte": 0.0,
+            "Neuron": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Plasma cell": 0.0,
+            "Natural killer cell": 0.0,
+            "Goblet cell": 0.0,
+            "B cell": 0.0,
+            "Hepatocyte": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "T cell": 1.0,
+            "Mast cell": 0.0,
+            "Pericyte": 0.0,
+            "Fibroblast": 0.0,
+            "Astrocyte": 0.0,
+            "Endothelial cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Ciliated epithelial cell": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.23,
+          "confidence": 0.36,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.05,
+            "2": 0.11,
+            "3": 0.35,
+            "4": 0.48
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1360,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Opus 5.5",
+    "repeat": 4,
+    "response": {
+      "id": "msg_011CfjeF1VWJ8Wh1NNgY8uJH",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 4,
+    "response": {
+      "id": "msg_011CfjeF6zPVd9k9imzzo87y",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Jev",
+    "repeat": 5,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Neural cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Stromal cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Epithelial cell": 0.0,
+            "Immune cell": 1.0,
+            "Muscle cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Oligodendrocyte": 0.0,
+            "Pericyte": 0.0,
+            "Neuron": 0.0,
+            "Dendritic cell": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Hepatocyte": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Fibroblast": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Plasma cell": 0.0,
+            "B cell": 0.0,
+            "Astrocyte": 0.0,
+            "T cell": 1.0,
+            "Epithelial cell": 0.0,
+            "Macrophage": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Natural killer cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Mast cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Neutrophil": 0.0,
+            "Goblet cell": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Erythrocyte": 0.0,
+            "Monocyte": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.66,
+          "confidence": 0.72,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.01,
+            "2": 0.06,
+            "3": 0.18,
+            "4": 0.75
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Opus 5.5",
+    "repeat": 5,
+    "response": {
+      "id": "msg_011CfjeFFTt1n7PjCcHYVBYE",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 5,
+    "response": {
+      "id": "msg_011CfjeFNAhxDEmX1nmitqXc",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Jev",
+    "repeat": 5,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Neural cell": 0.0,
+            "Stromal cell": 0.0,
+            "Muscle cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Immune cell": 1.0,
+            "Erythroid lineage cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Macrophage": 0.0,
+            "Erythrocyte": 0.0,
+            "T cell": 1.0,
+            "Oligodendrocyte": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Endothelial cell": 0.0,
+            "Natural killer cell": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Goblet cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Monocyte": 0.0,
+            "B cell": 0.0,
+            "Fibroblast": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Neuron": 0.0,
+            "Dendritic cell": 0.0,
+            "Plasma cell": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Pericyte": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Astrocyte": 0.0,
+            "Neutrophil": 0.0,
+            "Hepatocyte": 0.0,
+            "Epithelial cell": 0.0,
+            "Mast cell": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.29,
+          "confidence": 0.4,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.04,
+            "2": 0.11,
+            "3": 0.32,
+            "4": 0.52
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1360,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Opus 5.5",
+    "repeat": 5,
+    "response": {
+      "id": "msg_011CfjeFV7RaueoF1d8vmno5",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 5,
+    "response": {
+      "id": "msg_011CfjeFatSHEHs55juhmM5Q",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Jev",
+    "repeat": 6,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Unknown / other broad type": 0.0,
+            "Stromal cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Immune cell": 1.0,
+            "Endothelial cell": 0.0,
+            "Muscle cell": 0.0,
+            "Neural cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Monocyte": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Macrophage": 0.0,
+            "Pericyte": 0.0,
+            "Hepatocyte": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Goblet cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Neutrophil": 0.0,
+            "Epithelial cell": 0.0,
+            "Astrocyte": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Dendritic cell": 0.0,
+            "Fibroblast": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Neuron": 0.0,
+            "Erythrocyte": 0.0,
+            "Mast cell": 0.0,
+            "Plasma cell": 0.0,
+            "T cell": 1.0,
+            "Alveolar type 2 cell": 0.0,
+            "B cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Natural killer cell": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.65,
+          "confidence": 0.71,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.01,
+            "2": 0.06,
+            "3": 0.19,
+            "4": 0.74
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Opus 5.5",
+    "repeat": 6,
+    "response": {
+      "id": "msg_011CfjeFiTbACafHuts6c1DL",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 6,
+    "response": {
+      "id": "msg_011CfjeFsucoqDJG2feF7aBt",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Jev",
+    "repeat": 6,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Muscle cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Stromal cell": 0.0,
+            "Immune cell": 1.0,
+            "Neural cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Endothelial cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Cardiomyocyte": 0.0,
+            "Plasma cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Monocyte": 0.0,
+            "T cell": 1.0,
+            "Endothelial cell": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Goblet cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Natural killer cell": 0.0,
+            "Neutrophil": 0.0,
+            "Mast cell": 0.0,
+            "Macrophage": 0.0,
+            "Fibroblast": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Neuron": 0.0,
+            "Pericyte": 0.0,
+            "Erythrocyte": 0.0,
+            "B cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Astrocyte": 0.0,
+            "Hepatocyte": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Dendritic cell": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.27,
+          "confidence": 0.39,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.04,
+            "2": 0.11,
+            "3": 0.32,
+            "4": 0.52
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1360,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Opus 5.5",
+    "repeat": 6,
+    "response": {
+      "id": "msg_011CfjeFzw3qcecEpmDdjPgx",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 6,
+    "response": {
+      "id": "msg_011CfjeG77cPricwP8Deqvf1",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Jev",
+    "repeat": 7,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Neural cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Immune cell": 1.0,
+            "Epithelial cell": 0.0,
+            "Stromal cell": 0.0,
+            "Muscle cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Unknown / other broad type": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Fibroblast": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Neutrophil": 0.0,
+            "Goblet cell": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Plasma cell": 0.0,
+            "Natural killer cell": 0.0,
+            "T cell": 1.0,
+            "Hepatocyte": 0.0,
+            "Astrocyte": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Smooth muscle cell": 0.0,
+            "B cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Macrophage": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Dendritic cell": 0.0,
+            "Neuron": 0.0,
+            "Endothelial cell": 0.0,
+            "Pericyte": 0.0,
+            "Erythrocyte": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Mast cell": 0.0,
+            "Monocyte": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.63,
+          "confidence": 0.69,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.01,
+            "2": 0.06,
+            "3": 0.2,
+            "4": 0.73
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Opus 5.5",
+    "repeat": 7,
+    "response": {
+      "id": "msg_011CfjeGEnyjJ8jy9ZoEC1An",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 7,
+    "response": {
+      "id": "msg_011CfjeGNJRWipFiLKEbgbgn",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Jev",
+    "repeat": 7,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Neural cell": 0.0,
+            "Muscle cell": 0.0,
+            "Stromal cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Immune cell": 1.0,
+            "Erythroid lineage cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Skeletal muscle cell": 0.0,
+            "Natural killer cell": 0.0,
+            "Neuron": 0.0,
+            "B cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Cardiomyocyte": 0.0,
+            "T cell": 1.0,
+            "Erythrocyte": 0.0,
+            "Epithelial cell": 0.0,
+            "Neutrophil": 0.0,
+            "Endothelial cell": 0.0,
+            "Fibroblast": 0.0,
+            "Plasma cell": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Astrocyte": 0.0,
+            "Goblet cell": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Hepatocyte": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Dendritic cell": 0.0,
+            "Mast cell": 0.0,
+            "Pericyte": 0.0,
+            "Monocyte": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Macrophage": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.21,
+          "confidence": 0.34,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.05,
+            "2": 0.12,
+            "3": 0.35,
+            "4": 0.47
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1360,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Opus 5.5",
+    "repeat": 7,
+    "response": {
+      "id": "msg_011CfjeGUv3KMD9sbgU25U5n",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 7,
+    "response": {
+      "id": "msg_011CfjeGasE59kvnNLxbigYX",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Jev",
+    "repeat": 8,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Epithelial cell": 0.0,
+            "Muscle cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Stromal cell": 0.0,
+            "Neural cell": 0.0,
+            "Immune cell": 1.0,
+            "Endothelial cell": 0.0,
+            "Unknown / other broad type": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Natural killer cell": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Erythrocyte": 0.0,
+            "T cell": 1.0,
+            "Pericyte": 0.0,
+            "Macrophage": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Endothelial cell": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Goblet cell": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Hepatocyte": 0.0,
+            "Plasma cell": 0.0,
+            "Mast cell": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Monocyte": 0.0,
+            "Neuron": 0.0,
+            "Astrocyte": 0.0,
+            "Fibroblast": 0.0,
+            "Dendritic cell": 0.0,
+            "B cell": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Neutrophil": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.67,
+          "confidence": 0.73,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.01,
+            "2": 0.05,
+            "3": 0.17,
+            "4": 0.77
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Opus 5.5",
+    "repeat": 8,
+    "response": {
+      "id": "msg_011CfjeGnf8jaixRaFMFK4hk",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 8,
+    "response": {
+      "id": "msg_011CfjeHUfgtRcmxPzxevX3u",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Jev",
+    "repeat": 8,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Endothelial cell": 0.0,
+            "Muscle cell": 0.0,
+            "Immune cell": 1.0,
+            "Unknown / other broad type": 0.0,
+            "Stromal cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Neural cell": 0.0,
+            "Epithelial cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Dendritic cell": 0.0,
+            "Mast cell": 0.0,
+            "B cell": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Endothelial cell": 0.0,
+            "Pericyte": 0.0,
+            "Macrophage": 0.0,
+            "Neuron": 0.0,
+            "Monocyte": 0.0,
+            "Natural killer cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Astrocyte": 0.0,
+            "T cell": 1.0,
+            "Alveolar type 2 cell": 0.0,
+            "Goblet cell": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Hepatocyte": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Erythrocyte": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Fibroblast": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Plasma cell": 0.0,
+            "Neutrophil": 0.0,
+            "Smooth muscle cell": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.2,
+          "confidence": 0.33,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.05,
+            "2": 0.13,
+            "3": 0.35,
+            "4": 0.46
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1360,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Opus 5.5",
+    "repeat": 8,
+    "response": {
+      "id": "msg_011CfjeHbVhGGHtFGcdWt1T6",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 8,
+    "response": {
+      "id": "msg_011CfjeHhco45jfgtdZSZKRT",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Jev",
+    "repeat": 9,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Erythroid lineage cell": 0.0,
+            "Neural cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Stromal cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Immune cell": 1.0,
+            "Muscle cell": 0.0,
+            "Endothelial cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Natural killer cell": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Neuron": 0.0,
+            "Erythrocyte": 0.0,
+            "Plasma cell": 0.0,
+            "Dendritic cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "B cell": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Hepatocyte": 0.0,
+            "Astrocyte": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Goblet cell": 0.0,
+            "Monocyte": 0.0,
+            "T cell": 1.0,
+            "Neutrophil": 0.0,
+            "Endothelial cell": 0.0,
+            "Macrophage": 0.0,
+            "Mast cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Fibroblast": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Pericyte": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.66,
+          "confidence": 0.71,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.01,
+            "2": 0.06,
+            "3": 0.17,
+            "4": 0.76
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Opus 5.5",
+    "repeat": 9,
+    "response": {
+      "id": "msg_011CfjeHqX4Ee89gGf1NJcyN",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 9,
+    "response": {
+      "id": "msg_011CfjeHvd8vMCnaVM71s576",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Jev",
+    "repeat": 9,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Erythroid lineage cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Muscle cell": 0.0,
+            "Immune cell": 1.0,
+            "Epithelial cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Neural cell": 0.0,
+            "Stromal cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Natural killer cell": 0.0,
+            "Neuron": 0.0,
+            "Hepatocyte": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Goblet cell": 0.0,
+            "Plasma cell": 0.0,
+            "Cardiomyocyte": 0.0,
+            "T cell": 1.0,
+            "Pericyte": 0.0,
+            "Erythrocyte": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Dendritic cell": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Macrophage": 0.0,
+            "Monocyte": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "Astrocyte": 0.0,
+            "Mast cell": 0.0,
+            "B cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Epithelial cell": 0.0,
+            "Fibroblast": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Neutrophil": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.29,
+          "confidence": 0.41,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.04,
+            "2": 0.11,
+            "3": 0.32,
+            "4": 0.52
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1360,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Opus 5.5",
+    "repeat": 9,
+    "response": {
+      "id": "msg_011CfjeJ3KioMYUG3rtMpJN3",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 9,
+    "response": {
+      "id": "msg_011CfjeJ9sNFjxziwm2kXSsj",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Jev",
+    "repeat": 10,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Muscle cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Immune cell": 1.0,
+            "Epithelial cell": 0.0,
+            "Stromal cell": 0.0,
+            "Endothelial cell": 0.0,
+            "Neural cell": 0.0,
+            "Erythroid lineage cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Goblet cell": 0.0,
+            "Neutrophil": 0.0,
+            "Fibroblast": 0.0,
+            "Monocyte": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Cardiomyocyte": 0.0,
+            "Mast cell": 0.0,
+            "B cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Plasma cell": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Pericyte": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Erythrocyte": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Macrophage": 0.0,
+            "Hepatocyte": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Astrocyte": 0.0,
+            "Dendritic cell": 0.0,
+            "Neuron": 0.0,
+            "Endothelial cell": 0.0,
+            "Natural killer cell": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "T cell": 1.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.64,
+          "confidence": 0.7,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.0,
+            "1": 0.01,
+            "2": 0.06,
+            "3": 0.19,
+            "4": 0.74
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1354,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Opus 5.5",
+    "repeat": 10,
+    "response": {
+      "id": "msg_011CfjeJJ3VZwcyMofjqzzeT",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 10,
+    "response": {
+      "id": "msg_011CfjeJSCdTsf2jnoj41eQa",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":4}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2255,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Jev",
+    "repeat": 10,
+    "response": {
+      "model": "jev-1.13.0",
+      "answers": {
+        "broad_type": {
+          "type": "choice",
+          "choice": "Immune cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Epithelial cell": 0.0,
+            "Erythroid lineage cell": 0.0,
+            "Stromal cell": 0.0,
+            "Unknown / other broad type": 0.0,
+            "Endothelial cell": 0.0,
+            "Neural cell": 0.0,
+            "Immune cell": 1.0,
+            "Muscle cell": 0.0
+          }
+        },
+        "cell_type": {
+          "type": "choice",
+          "choice": "T cell",
+          "confidence": 1.0,
+          "probabilities": {
+            "Hepatocyte": 0.0,
+            "Plasma cell": 0.0,
+            "Natural killer cell": 0.0,
+            "Epithelial cell": 0.0,
+            "Unknown / other cell type": 0.0,
+            "Goblet cell": 0.0,
+            "Alveolar type 1 cell": 0.0,
+            "Dendritic cell": 0.0,
+            "Monocyte": 0.0,
+            "Astrocyte": 0.0,
+            "Endothelial cell": 0.0,
+            "Fibroblast": 0.0,
+            "Mast cell": 0.0,
+            "T cell": 1.0,
+            "Cardiomyocyte": 0.0,
+            "Oligodendrocyte": 0.0,
+            "Erythrocyte": 0.0,
+            "Macrophage": 0.0,
+            "Neuron": 0.0,
+            "Alveolar type 2 cell": 0.0,
+            "Smooth muscle cell": 0.0,
+            "Neutrophil": 0.0,
+            "Ciliated epithelial cell": 0.0,
+            "Pericyte": 0.0,
+            "Skeletal muscle cell": 0.0,
+            "B cell": 0.0
+          }
+        },
+        "identity_coherence": {
+          "type": "score",
+          "score": 3.27,
+          "confidence": 0.39,
+          "legend": {
+            "0": "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+            "1": "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+            "2": "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+            "3": "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+            "4": "Highly coherent: the markers strongly and consistently support one clear cell identity."
+          },
+          "probabilities": {
+            "0": 0.01,
+            "1": 0.05,
+            "2": 0.11,
+            "3": 0.32,
+            "4": 0.51
+          }
+        }
+      },
+      "usage": {
+        "input_tokens": 1360,
+        "output_tokens": 402
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Opus 5.5",
+    "repeat": 10,
+    "response": {
+      "id": "msg_011CfjeJYiJBuHoCBTuXZjGs",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-opus-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  },
+  {
+    "case": "base + LST1",
+    "model": "Claude Sonnet 5.5",
+    "repeat": 10,
+    "response": {
+      "id": "msg_011CfjeJf6mQV8zT231XxByQ",
+      "container": null,
+      "content": [
+        {
+          "text": "{\"broad_type\":\"Immune cell\",\"cell_type\":\"T cell\",\"identity_coherence\":3}",
+          "type": "text"
+        }
+      ],
+      "diagnostics": null,
+      "model": "claude-sonnet-5-5",
+      "role": "assistant",
+      "stop_details": null,
+      "stop_reason": "end_turn",
+      "stop_sequence": null,
+      "type": "message",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "global",
+        "input_tokens": 2262,
+        "output_tokens": 35,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard"
+      }
+    }
+  }
+]
