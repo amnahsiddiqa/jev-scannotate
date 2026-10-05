@@ -1,0 +1,59 @@
+{
+  "broad_type": {
+    "type": "choice",
+    "instructions": "Choose the broad cell category best supported by the marker genes. Use tissue context when available. Select one option.",
+    "criteria": {
+      "Immune cell": "Cells of the hematopoietic immune system.",
+      "Endothelial cell": "Cells lining blood or lymphatic vessels.",
+      "Epithelial cell": "Epithelial cells forming tissue surfaces or glands.",
+      "Stromal cell": "Connective-tissue and supporting stromal cells.",
+      "Muscle cell": "Contractile skeletal, cardiac, or smooth muscle cells.",
+      "Neural cell": "Neurons and glial cells of the nervous system.",
+      "Erythroid lineage cell": "Erythrocytes and their erythroid precursors.",
+      "Unknown / other broad type": "Use when none of the listed options is adequately supported by the marker genes."
+    }
+  },
+  "cell_type": {
+    "type": "choice",
+    "instructions": "Choose the specific cell type best supported by the marker genes. Use tissue context when available. Select one option.",
+    "criteria": {
+      "T cell": "T lymphocyte, including conventional CD4 or CD8 T cells.",
+      "B cell": "B lymphocyte.",
+      "Natural killer cell": "Natural killer lymphocyte.",
+      "Plasma cell": "Antibody-secreting differentiated B cell.",
+      "Monocyte": "Circulating monocyte.",
+      "Macrophage": "Phagocytic macrophage.",
+      "Dendritic cell": "Antigen-presenting dendritic cell.",
+      "Mast cell": "Granulated mast cell.",
+      "Endothelial cell": "Vascular or lymphatic endothelial cell.",
+      "Fibroblast": "Matrix-producing fibroblast or fibroblast-like stromal cell.",
+      "Pericyte": "Perivascular mural cell.",
+      "Smooth muscle cell": "Contractile smooth muscle cell.",
+      "Skeletal muscle cell": "Skeletal muscle fiber or myocyte.",
+      "Cardiomyocyte": "Contractile cardiac muscle cell.",
+      "Epithelial cell": "General epithelial cell when a more specific subtype is not justified.",
+      "Hepatocyte": "Liver parenchymal cell.",
+      "Alveolar type 1 cell": "Type I alveolar epithelial cell.",
+      "Alveolar type 2 cell": "Type II alveolar epithelial cell.",
+      "Ciliated epithelial cell": "Ciliated epithelial cell.",
+      "Goblet cell": "Mucus-secreting goblet cell.",
+      "Neuron": "Neuronal cell.",
+      "Astrocyte": "Astrocyte glial cell.",
+      "Oligodendrocyte": "Myelinating oligodendrocyte.",
+      "Neutrophil": "Neutrophilic granulocyte.",
+      "Erythrocyte": "Red blood cell.",
+      "Unknown / other cell type": "Use when none of the listed options is adequately supported by the marker genes."
+    }
+  },
+  "identity_coherence": {
+    "type": "score",
+    "instructions": "How strongly do the marker genes support one clear, coherent cell identity?",
+    "criteria": [
+      "No reliable single cell identity is supported: the markers are insufficient, nonspecific, or strongly conflicting across distinct cell identities.",
+      "Weak coherence: substantial conflicting or mixed cell-type evidence prevents a clear single-cell identity.",
+      "Ambiguous: one or more plausible cell identities are supported, with meaningful conflicting or mixed evidence.",
+      "Mostly coherent: one cell identity is clearly favored, with only minor conflicting or nonspecific evidence.",
+      "Highly coherent: the markers strongly and consistently support one clear cell identity."
+    ]
+  }
+}

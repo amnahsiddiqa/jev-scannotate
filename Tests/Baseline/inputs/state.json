@@ -1,0 +1,10 @@
+{
+  "marker_genes": [
+    "CD3D",
+    "CD3E",
+    "TRAC",
+    "IL7R",
+    "LTB"
+  ],
+  "tissue": "blood"
+}
